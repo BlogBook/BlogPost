@@ -1,0 +1,31 @@
+{% load staticfiles %} {% load adcode_tags %}{% block content %}
+<!--  -->
+
+<!-- Here you would put the actual ad code needed -->
+
+<link rel="stylesheet" href='{% static "css/rightnav.css" %}' />
+<script src='{% static "js/app.js" %}' ></script>
+<!-- Homepage Leaderboard -->
+
+<div class="rightnav">
+
+  <!-- {% for list in comment_list %}
+
+  <a href="{{ list.get_absolute_url }}">
+    {{list.Comment|linebreaks|truncatechars:50 }}
+  </a>
+  <hr />
+  {% endfor %} -->
+  <div class="row" > 
+  <div class="col-md-12" style="text-align: center;">
+    <div id="user-list" class="list-group">
+      <a href="" class="list-group-item disabled">
+        <h4 class="list-group-item-heading">Users</h4>
+        {# Users go here #}
+      </a>
+      <span class="badge"></span>
+    </div>
+  </div>
+</div>
+</div>
+ {% endblock %}

@@ -1,0 +1,19 @@
+
+{% for message in messages %}
+<div
+  id="fadeout"
+  class="alert {{ message.tags }} alert-dismissible"
+  role="alert"
+>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  {{ message }}
+</div>
+<script>
+  setTimeout(function () {
+    $("#fadeout").fadeOut("fast");
+  }, 3000);
+</script>
+
+{% endfor %}
